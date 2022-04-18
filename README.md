@@ -1,8 +1,4 @@
 # Standard.css
-Это CSS-библиотека для обнуления стилей, на базе Normalize.css.
-
-Использование - такое же, как у Normalize.css и Reset.css, подключение через директиву import или через css.
-
-Чем эта библиотека отличается от других?
-
-Тем, что тут собраны все преимущества Normalize.css и добавлены очень часто используемые стили.
+This is a CSS library for zeroing styles, based on Normalize.css.  
+Usage is the same as [Normalize.css](https://github.com/necolas/normalize.css), [Reset.css](https://gist.github.com/DavidWells/18e73022e723037a50d6) and others CSS libraries.  
+This library contains all the advantages of Normalize.css and adds very frequently used styles.  
