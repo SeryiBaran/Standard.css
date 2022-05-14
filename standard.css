@@ -1,10 +1,25 @@
-/*! standard.css v1.4 | MIT License | https://github.com/SeryiBaran/standard.css */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/*! standard.css v1.5 | MIT License | https://github.com/SeryiBaran/standard.css */
 /*! Based on normalize.css | https://github.com/necolas/normalize.css */
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,21 +31,29 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100vh;
   line-height: 1;
 }
 
 html {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pseudo_body {
+  min-height: 100vh;
 }
 
 h1,
@@ -84,11 +107,12 @@ ul li {
 .clr-outline-for-libs .btn:active.focus,
 .clr-outline-for-libs .btn:active:focus,
 .clr-outline-for-libs .btn:focus {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
   outline: 0 !important;
   outline-color: transparent !important;
-  outline-width: 0 !important;
   outline-style: none !important;
-  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  outline-width: 0 !important;
+          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
 }
 
 .clr-all-styles-for-tables table,
@@ -121,26 +145,8 @@ tfoot,
 tr,
 th,
 td {
-  border-spacing: 0;
   border-collapse: collapse;
-}
-
-/*
-* Normalize.css
-*   ||
-*   ||
-*   ||
-*  \  /
-*   \/
-*/
-
-html {
-  text-size-adjust: 100%;
-  /*line-height: 1.15;*/
-}
-
-body {
-  margin: 0;
+  border-spacing: 0;
 }
 
 main {
@@ -153,7 +159,8 @@ h1 {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -168,9 +175,10 @@ a {
 }
 
 abbr[title] {
+  -webkit-text-decoration: underline dotted;
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -231,24 +239,26 @@ select {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  appearance: button;
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -257,7 +267,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: table;
   max-width: 100%;
   padding: 0;
@@ -273,28 +284,33 @@ textarea {
   overflow: auto;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
+[type='checkbox'],
+[type='radio'] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type="search"] {
-  appearance: textfield;
+[type='search'] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   outline-offset: -2px;
 }
 
-[type="search"]::-webkit-search-decoration {
-  appearance: none;
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 ::-webkit-file-upload-button {
-  appearance: button;
+  -webkit-appearance: button;
+          appearance: button;
   font: inherit;
 }
 
