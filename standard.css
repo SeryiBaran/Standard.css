@@ -23,8 +23,8 @@ body {
 
 html {
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
   font-size: 62.5%;
 }
 
@@ -91,7 +91,6 @@ ul li {
 .clr-outline-for-libs .btn:active.focus,
 .clr-outline-for-libs .btn:active:focus,
 .clr-outline-for-libs .btn:focus {
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
   outline: 0 !important;
   outline-color: transparent !important;
   outline-style: none !important;
@@ -158,10 +157,10 @@ a {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -226,8 +225,8 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -279,8 +278,8 @@ textarea {
 
 [type='search'] {
   -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -291,7 +290,7 @@ textarea {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  appearance: button;
+          appearance: button;
   font: inherit;
 }
 
