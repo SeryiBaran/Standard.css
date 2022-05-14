@@ -1,25 +1,10 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
 /*! standard.css v1.5 | MIT License | https://github.com/SeryiBaran/standard.css */
 /*! Based on normalize.css | https://github.com/necolas/normalize.css */
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -38,9 +23,8 @@ body {
 
 html {
   -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   font-size: 62.5%;
 }
 
@@ -112,7 +96,7 @@ ul li {
   outline-color: transparent !important;
   outline-style: none !important;
   outline-width: 0 !important;
-          box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
 }
 
 .clr-all-styles-for-tables table,
@@ -159,8 +143,7 @@ h1 {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -178,7 +161,7 @@ abbr[title] {
   -webkit-text-decoration: underline dotted;
   border-bottom: none;
   text-decoration: underline;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -243,8 +226,8 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -267,8 +250,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: table;
   max-width: 100%;
   padding: 0;
@@ -286,8 +268,7 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -298,19 +279,19 @@ textarea {
 
 [type='search'] {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-          appearance: button;
+  appearance: button;
   font: inherit;
 }
 

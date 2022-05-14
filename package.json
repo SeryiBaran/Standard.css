@@ -1,0 +1,26 @@
+{
+  "name": "Standard.css",
+  "scripts": {
+    "format": "prettier --write ./standard.css",
+    "csssort": "postcss ./standard.css --replace --config package.json --no-map",
+    "cssprefix": "postcss ./standard.css --replace --use autoprefixer --config package.json --no-map",
+    "csssavemin": "postcss ./standard.css > ./standard.min.css --use cssnano --no-map",
+    "prod": "npm run format && npm run csssort && npm run cssprefix && npm run csssavemin"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "css-declaration-sorter": "^6.1.4",
+    "cssnano": "^5.1.7",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "prettier": "^2.5.1"
+  },
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "css-declaration-sorter": {
+        "order": "smacss"
+      }
+    }
+  }
+}
