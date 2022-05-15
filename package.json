@@ -3,9 +3,9 @@
   "scripts": {
     "format": "prettier --write ./standard.css",
     "csssort": "postcss ./standard.css --replace --config package.json --no-map",
-    "cssprefix": "postcss ./standard.css --replace --use autoprefixer --config package.json --no-map",
-    "csssavemin": "postcss ./standard.css > ./standard.min.css --use cssnano --no-map",
-    "prod": "npm run format && npm run csssort && npm run cssprefix && npm run csssavemin"
+    "prod:prefix": "postcss ./standard.css > ./dist/standard.css --use autoprefixer --config package.json --no-map",
+    "prod:min": "postcss ./dist/standard.css > ./dist/standard.min.css --use cssnano --no-map",
+    "prod": "npm run format && npm run csssort && rimraf ./dist && mkdir dist && npm run prod:prefix && npm run prod:min"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
@@ -22,5 +22,8 @@
         "order": "smacss"
       }
     }
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
