@@ -1,5 +1,6 @@
 {
   "name": "Standard.css",
+  "version": "1.6",
   "scripts": {
     "format": "prettier --write ./standard.css",
     "csssort": "postcss ./standard.css --replace --config package.json --no-map",
