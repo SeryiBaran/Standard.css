@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  word-break: normal;
 }
 
 *[contenteditable] {
@@ -74,7 +75,7 @@ a,
 a:visited,
 a:active,
 a:hover {
-  color: inherit;
+  color: unset;
   text-decoration: none;
 }
 
