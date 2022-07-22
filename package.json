@@ -9,12 +9,12 @@
     "prod": "npm run format && npm run csssort && rimraf ./dist && mkdir dist && npm run prod:prefix && npm run prod:min"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "css-declaration-sorter": "^6.1.4",
-    "cssnano": "^5.1.7",
-    "postcss": "^8.4.8",
-    "postcss-cli": "^9.1.0",
-    "prettier": "^2.5.1"
+    "autoprefixer": "^10.4.7",
+    "css-declaration-sorter": "^6.3.0",
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "prettier": "^2.7.1"
   },
   "postcss": {
     "map": false,
